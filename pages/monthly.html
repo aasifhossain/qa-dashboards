@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Dashboard</title>
     <link rel="stylesheet" href="../styles/monthly.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -56,11 +57,14 @@
                 </ul>
             </nav>
         </div>
-        <main class="main-section">
-            <div id="graph-container">
-                <p>Select a project to view the graph.</p>
+        <div class="dashboard-grid">
+            <div class="grid-item" id="chart-container">
+                <div id="graph-container"></div> <!-- Bar chart will be rendered here -->
             </div>
-        </main>
+            <div class="grid-item">Second Quarter</div>
+            <div class="grid-item">Third Quarter</div>
+            <div class="grid-item">Fourth Quarter</div>
+        </div>
     </div>
 
     <script src="../scripts/monthly.js"></script> <!-- Link to your JavaScript file -->

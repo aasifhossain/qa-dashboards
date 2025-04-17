@@ -14,4 +14,4 @@ function checkPermission() {
 }
 
 // Run the permission check when the page loads
-window.onload = checkPermission;
+// window.onload = checkPermission;

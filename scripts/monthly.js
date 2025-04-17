@@ -1,35 +1,48 @@
-// import {fetchData} from './utility.js';
+async function showMonthlyGraph (projectName) {
+  const monthSelected = document.getElementById('month-select').value
+  const graphContainer = document.getElementById('graph-container')
 
-async function fetchData (monthName, appName, columnNumber, year = 2025) {
-  const filePath = `../data/${monthName}${year}.csv` // Adjust the path if needed
-  try {
-    const response = await fetch(filePath)
-    if (!response.ok) {
-      throw new Error(
-        `Failed to fetch data from ${filePath}: ${response.statusText}`
-      )
-    }
-    const csvData = await response.text()
-    const rows = csvData.split('\n') // Split rows by newline
-    for (const row of rows) {
-      const columns = row.split(',') // Split columns by comma
-      if (columns[0].trim() === appName) {
-        return columns[columnNumber] // Return the desired column value
+  // Generate random counts for demonstration
+  const totalTestCases = Math.floor(Math.random() * 1000) + 100 // Random between 100 and 1100
+  const automatedTestCases = Math.floor(Math.random() * totalTestCases) // Random less than totalTestCases
+
+  // Clear the graph container and add a new canvas
+  graphContainer.innerHTML = `<canvas id="barChart"></canvas>`
+  const canvas = document.getElementById('barChart')
+
+  // Set the canvas to take up the full size of the parent
+  canvas.style.width = '100%'
+  canvas.style.height = '100%'
+
+  // Create the bar chart using Chart.js
+  new Chart(canvas.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ['Total Test Cases', 'Automated Test Cases'],
+      datasets: [
+        {
+          label: `${projectName} - ${monthSelected}`,
+          data: [totalTestCases, automatedTestCases],
+          backgroundColor: ['#4CAF50', '#2196F3'], // Colors for the bars
+          borderColor: ['#388E3C', '#1976D2'], // Border colors
+          borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      responsive: true, // Ensures the chart resizes with the parent
+      maintainAspectRatio: false, // Allows the chart to fill the parent container
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-    return null; // Return null if no matching appName is found
-  } catch (error) {
-    console.error(`Error fetching data: ${error.message}`)
-    return null;
-  }
-}
-
-async function showMonthlyGraph (projectName) {
-  const monthSelected = document.getElementById('month-select').value;
-  const graphContainer = document.getElementById('graph-container');
-  if (projectName && monthSelected) {
-    const owner = await fetchData(monthSelected, projectName, 1) // 1 is the column number for owner name
-    console.log(`Owner Name: ${owner}`)
-    graphContainer.innerHTML = `<h2>${projectName} by ${owner}</h2><p>Graph for ${monthSelected} will be displayed here.</p>`
-  }
+  })
 }
