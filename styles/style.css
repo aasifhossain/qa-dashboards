@@ -1,0 +1,49 @@
+body {
+    background-color: #cbceb5a2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px ;
+    background-color: #360404;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.title .logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Make the container take the full height of the viewport */
+    font-size: smaller;
+    
+    column-gap: 20px;
+    
+}
+.card {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Set a fixed width for the card */
+    text-align: center;
+    transition: transform 0.1s, box-shadow 0.1s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a more prominent shadow */
+    background-color: #e0e0e0; /* Change background color */
+}

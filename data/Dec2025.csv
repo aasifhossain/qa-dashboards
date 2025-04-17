@@ -1,0 +1,17 @@
+Applications,Owner,Total # of test cases ,Total # of test cases automated,Automation coverage %,Total # of test cases ,Total # of test cases automated,Automation coverage %,Total # of test cases uploaded in Zephyr,Total # of test cases executed in Zephyr,Total # of defects identified,Comments,,,,,,,,,,,,,
+CV Portal,Teddy,42,42,100.00%,420,420,100.00%,462,462,0,  ,,,,,,,,,,,,,Y
+CV Gateway,Teddy,26,23,88.46%,392,392,100.00%,418,418,0,,,,,,,,,,,,,,N
+Chatbot,Keerthana/Basheer,88,80,90.91%,NA,NA,NA,747,747,0,SP Chat UI only automation completed,,,,,,,,,,,,,Y
+Customer Rates,Paul/Chanakya,NA,NA,NA,1825,1825,100.00%,1825,7290,0,No deliverables  ,,,,,,,,,,,,,Y
+CTI,Lokeshvery,892,70,7.85%,871,643,73.82%,1763,11059,0,"Includes Connect911,agent extn,agent absence(UI & API),MAGIC POV,CCaaS ServiceRecoveryAlert items.",,,,,,,,,,,,,Y
+Generic Text Systems UI,Paul/Chanakya,159,0,0,NA,NA,NA,157,157,1,    ,,,,,,,,,,,,,Y
+AID,Paul/Chanakya,90,29,32.22%,NA,NA,NA,602,646,0,.    ,,,,,,,,,,,,,Y
+Mobile App Web,Basheer Ahamed,82,34,41.46%,NA,NA,0,1949,1949,0,       ,,,,,,,,,,,,,Y
+Alt Transportation,Paul/Chanakya,41,0,0.00%,85,80,94.12%,576,664,0,       ,,,,,,,,,,,,,Y
+Direct Access,Sukhanya,NA,NA,NA,472,472,100.00%,472,472,4,,,,,,,,,,,,,,N
+Profile Loads,Aasif,NA,NA,NA,1340,150,11.19%,1340,1340,14,"Automation completed for Full Refresh and OEM client types;Automation for Profile Search API in progress",,,,,,,,,,,,,Y
+Speech IVA,Keerthana,250,125,50.00%,NA,NA,0.00%,4994,4994,0,Cyara Automation testing is in progress(Speech Application),,,,,,,,,,,,,Y
+SwoopLite,Paul/Chanakya,147,0,0.00%,NA,NA,NA,145,175,0,  :    ,,,,,,,,,,,,,Y
+Release Paperwork,Paul/Chanakya,115,0,0.00%,NA,NA,NA,114,114,1,     ,,,,,,,,,,,,,Y
+MBUSA,Paul/Chanakya,NA,NA,NA,237,135,56.96%,237,237,0,  ,,,,,,,,,,,,,Y
+AM Client Chat,Basheer/ Keerthana,85,0,0.00%,NA,NA,NA,374,374,0,"USAA, Amica , Chubb and Progressive are on live.",,,,,,,,,,,,,N

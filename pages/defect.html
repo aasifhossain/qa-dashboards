@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Dashboard</title>
+    <link rel="stylesheet" href="../styles/monthly.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="top-section">
+        <a href="../index.html" class="back-arrow" title="Go Back to Dashboard">
+            &#8592; <!-- Unicode for left arrow -->
+        </a>
+        <h1>Defect Dashboard</h1>
+    </div>
+    <div class="dashboard">
+        <div class="sidebar">
+            <label for="month-select">Select Month:</label>
+            <select id="month-select" onchange="filterByMonth(this.value)">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <hr>
+            <nav class="left-navigation">
+                <ul>
+                    <li><a href="#" onclick="showGraph('CV Portal')">CV Portal</a></li>
+                    <li><a href="#" onclick="showGraph('CV Gateway')">CV Gateway</a></li>
+                    <li><a href="#" onclick="showGraph('Chatbot')">Chatbot</a></li>
+                    <li><a href="#" onclick="showGraph('Customer Rates')">CustomerRates</a></li>
+                    <li><a href="#" onclick="showGraph('CTI')">CTI</a></li>
+                    <li><a href="#" onclick="showGraph('Generic Text Systems UI')">Generic Text Systems UI</a></li>
+                    <li><a href="#" onclick="showGraph('AID')">AID</a></li>
+                    <li><a href="#" onclick="showGraph('Mobile App Web')">Mobile App Web</a></li>
+                    <li><a href="#" onclick="showGraph('Project 9')">Alt Transportation</a></li>
+                    <li><a href="#" onclick="showGraph('Alt Transportation')">Direct Access</a></li>
+                    <li><a href="#" onclick="showGraph('Profile Loads')">Profile Loads</a></li>
+                    <li><a href="#" onclick="showGraph('Speech IVA')">Speech IVA</a></li>
+                    <li><a href="#" onclick="showGraph('Swoop Lite')">SwoopLite</a></li>
+                    <li><a href="#" onclick="showGraph('Release Paperwork')">Release Paperwork</a></li>
+                    <li><a href="#" onclick="showGraph('MBUSA')">MBUSA</a></li>
+                    <li><a href="#" onclick="showGraph('AM Client Chat')">AM Client Chat</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <main class="main-section">
+            <div id="graph-container">
+                <p>Select a project to view the graph.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showGraph(projectName) {
+            const graphContainer=document.getElementById('graph-container');
+            graphContainer.innerHTML=`<h2>${projectName}</h2><p>Graph for ${projectName} will be displayed here.</p>`;
+        }
+    </script>
+</body>
+
+</html>

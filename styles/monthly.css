@@ -1,0 +1,82 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Make the container take the full height of the viewport */
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    background-color: #360404;
+    color: white;
+    padding: 1px 10px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.top-section h1 {
+    margin: 0 auto; /* Center the title horizontally */
+}
+
+.back-arrow {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em; /* Adjust the size of the back arrow */
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.back-arrow:hover {
+    color: #f2f0f0; /* Change color on hover */
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #e9d4d4;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.left-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-navigation li {
+    margin: 10px 0;
+}
+
+.left-navigation a {
+    text-decoration: none;
+    color: #360404;
+    font-weight: bold;
+    
+}
+
+.left-navigation a:hover {
+    color: #f9f9fb;
+       
+}
+
+.main-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#graph-container {
+    text-align: center;
+}
