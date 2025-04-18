@@ -17,6 +17,7 @@ body {
     padding: 1px 10px;
     position: relative;
     border-radius: 20px;
+    margin: 5px;
 }
 
 .top-section h1 {
@@ -42,7 +43,7 @@ body {
 }
 
 .sidebar {
-    width: 20%;
+    width: 15%;
     background-color: #e9d4d4;
     padding: 10px;
     margin-top: 10px;
@@ -78,8 +79,9 @@ body {
 
 .dashboard-grid {
     margin-top: 10px;
+    margin-right: 5px;
     display: grid;
-    grid-template-rows: 1fr 1fr; /* 3 rows of equal height */
+    grid-template-rows: 1fr 1fr; /* 2 rows of equal height */
     grid-template-columns: 1fr 1fr 1fr; /* 3 columns of equal width */
     gap: 3px; /* Space between grid items */
     height: 100%; /* Full height of the parent container */
