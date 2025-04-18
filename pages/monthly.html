@@ -14,12 +14,12 @@
         <a href="../index.html" class="back-arrow" title="Go Back to Dashboard">
             &#8592; <!-- Unicode for left arrow -->
         </a>
-        <h1>Monthly Dashboard</h1>
+        <h1>Monthly Summary Dashboard</h1>
     </div>
     <div class="dashboard">
         <div class="sidebar">
             <label for="month-select">Select Month:</label>
-            <select id="month-select" onchange="showMonthlyGraph(this.value)">
+            <select id="month-select" onchange="displayCharts()">
                 <option value="Jan">January</option>
                 <option value="Feb">February</option>
                 <option value="Mar">March</option>
@@ -36,34 +36,46 @@
             <hr>
             <nav class="left-navigation">
                 <ul>
-                    <li><a href="#" onclick="showMonthlyGraph('CV Portal')">CV Portal</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('CV Gateway')">CV Gateway</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Chatbot')">Chatbot</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Customer Rates')">CustomerRates</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('CTI')">CTI</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Generic Text Systems UI')">Generic Text Systems UI</a>
+                    <li><a href="#" onclick="displayCharts('CV Portal')">CV Portal</a></li>
+                    <li><a href="#" onclick="displayCharts('CV Gateway')">CV Gateway</a></li>
+                    <li><a href="#" onclick="displayCharts('Chatbot')">Chatbot</a></li>
+                    <li><a href="#" onclick="displayCharts('Customer Rates')">CustomerRates</a></li>
+                    <li><a href="#" onclick="displayCharts('CTI')">CTI</a></li>
+                    <li><a href="#" onclick="displayCharts('Generic Text Systems UI')">Generic Text Systems UI</a>
                     </li>
-                    <li><a href="#" onclick="showMonthlyGraph('AID')">AID</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Mobile App Web')">Mobile App Web</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Alt Transportation')">Alt Transportation</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Direct Access')">Direct Access</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Profile Loads')">Profile Loads</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Speech IVA')">Speech IVA</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Swoop Lite')">SwoopLite</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('Release Paperwork')">Release Paperwork</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('MBUSA')">MBUSA</a></li>
-                    <li><a href="#" onclick="showMonthlyGraph('AM Client Chat')">AM Client Chat</a></li>
+                    <li><a href="#" onclick="displayCharts('AID')">AID</a></li>
+                    <li><a href="#" onclick="displayCharts('Mobile App Web')">Mobile App Web</a></li>
+                    <li><a href="#" onclick="displayCharts('Alt Transportation')">Alt Transportation</a></li>
+                    <li><a href="#" onclick="displayCharts('Direct Access')">Direct Access</a></li>
+                    <li><a href="#" onclick="displayCharts('Profile Loads')">Profile Loads</a></li>
+                    <li><a href="#" onclick="displayCharts('Speech IVA')">Speech IVA</a></li>
+                    <li><a href="#" onclick="displayCharts('Swoop Lite')">SwoopLite</a></li>
+                    <li><a href="#" onclick="displayCharts('Release Paperwork')">Release Paperwork</a></li>
+                    <li><a href="#" onclick="displayCharts('MBUSA')">MBUSA</a></li>
+                    <li><a href="#" onclick="displayCharts('AM Client Chat')">AM Client Chat</a></li>
 
                 </ul>
             </nav>
         </div>
         <div class="dashboard-grid">
-            <div class="grid-item" id="chart-container">
-                <div id="graph-container"></div> <!-- Bar chart will be rendered here -->
+            <div class="grid-item" id="chart-container1">
+                <div id="graph-container1">...</div> <!-- Bar chart will be rendered here -->
             </div>
-            <div class="grid-item">Second Quarter</div>
-            <div class="grid-item">Third Quarter</div>
-            <div class="grid-item">Fourth Quarter</div>
+            <div class="grid-item" id="chart-container2">
+                <div id="graph-container2">...</div> <!-- Bar chart will be rendered here -->
+            </div>
+            <div class="grid-item" id="chart-container3">
+                <div id="graph-container3">...</div> <!-- Bar chart will be rendered here -->
+            </div>
+            <div class="grid-item">
+                <div id="graph-container4">...</div> <!-- Bar chart will be rendered here -->
+            </div>
+            <div class="grid-item">
+                <div id="graph-container5">...</div> <!-- Bar chart will be rendered here -->
+            </div>
+            <div class="grid-item">
+                <div id="graph-container6">...</div> <!-- Bar chart will be rendered here -->
+            </div>
         </div>
     </div>
 
